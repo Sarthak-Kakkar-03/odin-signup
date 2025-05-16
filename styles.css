@@ -7,6 +7,8 @@
     background-color: white;
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 body {
     display: flex;
@@ -67,7 +69,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: stretch;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: whitesmoke;
     box-sizing: border-box;
 }
@@ -81,9 +82,10 @@ body {
 
 #form-container-wrap {
     display: flex;
-    background-color: rgb(242, 231, 231);
+    background-color: white;
     flex-direction: column;
     padding: 15px var(--padding-left-val);
+    box-shadow: 0px 5px lightgray;
     
 }
 #form-container {
@@ -108,7 +110,50 @@ body {
     padding: 5px;
 }
 
-.field-label > input {
+.field-label  input {
     width: 200px;
     height: 20px;
+    border-color: #E5E7EB;
+
 }
+
+.field-label  input:focus {
+    border-color: blue;
+    box-shadow: 3px 5px lightgray;
+
+}
+
+.field-label input:invalid {
+    border-color: red;
+
+}
+
+#confirmation-container {
+    padding-left: var(--padding-left-val);
+    background-color: whitesmoke;
+}
+
+#confirmation-container > button {
+    padding: 10px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 5px 5px lightgray;
+}
+#confirmation-container > button:hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+#login-option a {
+    color: black;
+    font-weight: bold;
+}
+
+#login-option a:hover {
+    color: red;
+    cursor: pointer;
+}
+
